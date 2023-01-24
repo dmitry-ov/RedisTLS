@@ -21,7 +21,13 @@ redis-server \
 ```
 5. Run java app with correct path to your client certificate
 
+Application makes 2 requests to Redis: ``ping`` and ``select 0``
 
+Correct application out
+```
+PONG
+OK
+```
 
 
 
