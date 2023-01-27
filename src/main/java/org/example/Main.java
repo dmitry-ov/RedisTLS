@@ -50,12 +50,12 @@ public class Main {
         poolConfig.setBlockWhenExhausted(true); // if exhausted and no capacity for new connections - block or throw
 
         //with ssl config jedis pool
-        boolean sslEnamble = true;
+        boolean sslEnable = true;
         JedisPool pool = new JedisPool(
                 genericObjectPoolConfig,
                 "localhost",
                 6379,
-                sslEnamble,
+                sslEnable,
                 sslSocketFactory,
                 new SSLParameters(),
                 NoopHostnameVerifier.INSTANCE);
